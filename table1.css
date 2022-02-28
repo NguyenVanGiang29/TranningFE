@@ -1,0 +1,166 @@
+:root {
+    --graywhite-color: rgb(201, 200, 200);
+    --gray-color: rgb(218, 218, 218);
+}  
+
+body {
+    box-sizing: border-box;
+}
+
+.container1 {
+    display: flex;
+}
+
+.container {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 310px;
+}
+
+.row1 {
+    background-color: antiquewhite;
+    padding: 80px 0px 20px 25px;
+    position: relative;
+}
+
+.row2 {
+    border: 1px rgb(184, 182, 182) solid;
+    border-top: none;
+}
+
+.title1 {
+    color: white;
+    font-family: Monospace;
+}
+
+.title2 {
+    color: white;
+    font-family: Sans-serif;
+    font-weight: lighter;
+}
+
+.subtitle1 {
+    font-size: 20px;
+    color: gray;
+    padding: 30px 0px 0px 25px;
+    margin: 0px;
+}
+
+.subtitle2 {
+    padding: 0px 0px 10px 25px;
+    font-size: 10px;
+    color: rgb(158, 156, 156);
+    font-weight: bold;
+}
+
+.optiongray {
+    background-color: var(--gray-color);
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+
+.optionwhite {
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.buttonorder {
+    margin: 30px 0px 20px 25px;
+    border-radius: 20px;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(204, 199, 199);
+    text-align: center;
+    transition-duration: 0.4s;
+    color: white;
+    border: none;
+    font-family: Sans-serif;
+}
+
+.buttonorder:hover {
+    background-color: black;
+    color: white;
+}
+
+.desc {
+    color: white;
+    font-size: 10px;
+}
+
+#row2-center {
+    border-right: none;
+}
+
+.price {
+    background-color: rgb(21, 26, 90);
+    height: 69px;
+    width: 69px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -35px;
+    left: 30px;
+    flex-direction: column;
+}
+
+.money {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.subprice {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.input {
+    margin-left: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    .col {
+        padding: 40px 0px 0px 0px;
+    }
+    .row2 {
+        border: none;
+        background-color: rgb(240, 240, 240);
+    }
+    .optionwhite {
+        background-color: rgb(240, 240, 240);
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 1150px) {
+    .container {
+        margin-left: 70px;  
+    }
+    .col {
+        padding: 40px 0px 0px 0px;
+    }
+    .row2 {
+        background-color: rgb(240, 240, 240);
+    }
+    .optionwhite {
+        background-color: rgb(240, 240, 240);
+    }
+    #row2-center{
+        border-right: 1px rgb(126, 121, 121) solid;
+    }
+}
