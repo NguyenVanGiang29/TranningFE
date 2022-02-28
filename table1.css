@@ -7,9 +7,12 @@ body {
     box-sizing: border-box;
 }
 
+.container1 {
+    display: flex;
+}
+
 .container {
-    margin-top: 50px;
-    margin-left: 220px;  
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -119,6 +122,10 @@ body {
     font-weight: bold;
     font-size: 12px;
     margin: 0px;
+}
+
+.input {
+    margin-left: 28px;
 }
 
 @media only screen and (max-width: 600px) {
